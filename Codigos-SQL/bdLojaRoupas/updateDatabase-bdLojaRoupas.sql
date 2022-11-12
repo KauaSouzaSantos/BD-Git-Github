@@ -25,6 +25,8 @@ WHERE codVenda = 3
 DELETE FROM tbFabricante
 WHERE codFabricante = 1
 
+-- O erro ocorre pois o código do fabricante está conectado a outras tabelas como chave estrangeira, por isso a regra de integridade do Banco de Dados é aplicada, impedindo que um dado importante como esse seja deletado.
+
 SELECT * FROM tbFabricante
 SELECT * FROM tbCliente
 SELECT * FROM tbFuncionario
