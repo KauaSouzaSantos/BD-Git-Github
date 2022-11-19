@@ -9,23 +9,17 @@ VALUES
 	,	('Adriana Nogueira Silva', '76354309388', 'drica1977@ig.com.br', 'f', '09/04/1977')
 	,	('Paulo Henrique Silva', '87390123111', 'phsilva80@hotmail.com', 'm', '02/02/1987')
 
-SELECT * FROM tbCliente
-
 INSERT INTO tbFabricante(nomeFabricante)
 VALUES
 	('Unilever')
 	,	('P&G')
 	,	('Bunge')
 
-SELECT * FROM tbFabricante
-
 INSERT INTO tbFornecedor(nomeFornecedor, contatoFornecedor)
 VALUES
 	('Atacadão', 'Carlos Santos')
 	,	('Assai', 'Maria Stella')
 	,	('Roldão', 'Paulo César')
-
-SELECT * FROM tbFornecedor
 
 INSERT INTO tbProduto(descricaoProduto, valorProduto, qtdProduto, idFabricante, idFornecedor)
 VALUES
@@ -40,8 +34,6 @@ VALUES
 	,	('Xampu Seda', 5.89, 800, 1, 2)
 	,	('Condicionador Seda', 6.50, 700, 1, 3)
 
-SELECT * FROM tbProduto
-
 INSERT INTO tbVenda(dtVenda, valorTotalVenda, idcliente)
 VALUES
 	('01/02/2014', 4500.00, 1)
@@ -53,8 +45,6 @@ VALUES
   ,		('07/05/2014', 3500.00, 5)
   ,		('07/05/2014', 3400.00, 1)
   ,		('05/05/2014', 4000.00, 2)
-
-SELECT * FROM tbVenda
 
 INSERT INTO tbItensVenda(idVenda, idProduto, qtdItensVenda, subTotalItensVenda)
 VALUES
@@ -75,4 +65,10 @@ VALUES
 	, (8, 5, 200, 1700.00)
 	, (9, 4, 1000, 4000.00)
 
+
+SELECT * FROM tbCliente
+SELECT * FROM tbFabricante
+SELECT * FROM tbFornecedor
+SELECT * FROM tbProduto
+SELECT * FROM tbVenda
 SELECT * FROM tbItensVenda

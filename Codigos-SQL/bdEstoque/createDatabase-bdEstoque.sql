@@ -41,7 +41,6 @@ CREATE TABLE tbProduto(
 	, idFornecedor INT FOREIGN KEY REFERENCES tbFornecedor(idFornecedor)
 )
 
-
 CREATE TABLE tbItensVenda(
 	idItensVenda INT PRIMARY KEY IDENTITY(1,1)
 	, idVenda INT FOREIGN KEY REFERENCES tbVenda(idVenda)
