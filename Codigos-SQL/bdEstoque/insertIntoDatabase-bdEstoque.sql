@@ -21,7 +21,7 @@ VALUES
 	,	('Assai', 'Maria Stella')
 	,	('Roldão', 'Paulo César')
 
-INSERT INTO tbProduto(descricaoProduto, valorProduto, qtdProduto, idFabricante, idFornecedor)
+INSERT INTO tbProduto(descricaoProduto, valorProduto, qtdProduto, codFabricante, codFornecedor)
 VALUES
 	('Amaciante Downy', 5.76, 1500, 2, 1)
 	,	('Amaciante Comfort', 5.45, 2300, 1, 1)
@@ -34,7 +34,7 @@ VALUES
 	,	('Xampu Seda', 5.89, 800, 1, 2)
 	,	('Condicionador Seda', 6.50, 700, 1, 3)
 
-INSERT INTO tbVenda(dtVenda, valorTotalVenda, idcliente)
+INSERT INTO tbVenda(dtVenda, valorTotalVenda, codCliente)
 VALUES
 	('01/02/2014', 4500.00, 1)
   ,		('03/02/2014', 3400.00, 1)
@@ -46,7 +46,7 @@ VALUES
   ,		('07/05/2014', 3400.00, 1)
   ,		('05/05/2014', 4000.00, 2)
 
-INSERT INTO tbItensVenda(idVenda, idProduto, qtdItensVenda, subTotalItensVenda)
+INSERT INTO tbItensVenda(codVenda, codProduto, qtdItensVenda, subTotalItensVenda)
 VALUES
 	(1, 1, 200, 1500.00)
 	, (1, 2, 300, 3000.00)
@@ -65,10 +65,11 @@ VALUES
 	, (8, 5, 200, 1700.00)
 	, (9, 4, 1000, 4000.00)
 
-
+/*
 SELECT * FROM tbCliente
 SELECT * FROM tbFabricante
 SELECT * FROM tbFornecedor
 SELECT * FROM tbProduto
 SELECT * FROM tbVenda
 SELECT * FROM tbItensVenda
+*/
