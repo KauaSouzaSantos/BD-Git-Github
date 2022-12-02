@@ -33,7 +33,7 @@ CREATE TABLE tbMatricula(
 	, codTurma INT FOREIGN KEY REFERENCES tbTurma(codTurma)
 )
 
-/* 
+/*
 SELECT * FROM tbAluno
 SELECT * FROM tbCurso
 SELECT * FROM tbMatricula
